@@ -1,140 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Gurram Dhanush</title>
     <script src="https://kit.fontawesome.com/b0c3c94987.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./index.js" ></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    <script src="./index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function(){
+        (function () {
             emailjs.init("vFsFOvA8uoO6WA_Id");
         })();
     </script>
 </head>
+
 <body>
-    <section id="landing-page"  onmousemove="moveBackground(event)" >
+    <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
                 <img src="./assets/2.png" id="personal-logo">
             </figure>
             <ul class="navbar__links--list">
-                <li class="navbar__link"  onclick="togglemodal()"  >
+                <li class="navbar__link" onclick="togglemodal()">
                     <a href="#" class="navbar__link--anchor link__hover-effect link__hover-effect--black ">About</a>
                 </li>
-                <li class="navbar__link" >
-                    <a href="#projects" class="navbar__link--anchor link__hover-effect link__hover-effect--black ">Projects</a>
+                <li class="navbar__link">
+                    <a href="#projects"
+                        class="navbar__link--anchor link__hover-effect link__hover-effect--black ">Projects</a>
                 </li>
-                <li class="navbar__link" onclick="togglemodal()"  >
-                    <a href="#" class="navbar__link--anchor link__hover-effect link__hover-effect--black " >Contact</a>
+                <li class="navbar__link" onclick="togglemodal()">
+                    <a href="#" class="navbar__link--anchor link__hover-effect link__hover-effect--black ">Contact</a>
                 </li>
-                <li class="navbar__link click" onclick="toggleContrast()" > 
+                <li class="navbar__link click" onclick="toggleContrast()">
                     <a href="#" class=" navbar__link--anchor "><i class="fas fa-adjust  "></i></a>
                 </li>
             </ul>
         </nav>
 
-        <header  class="header" >
+        <header class="header">
             <div class="header__content">
-                <h1 class="title" >Hey</h1>
+                <h1 class="title">Hey</h1>
                 <h1 class="title orange"> I'm Dhanush.</h1>
-                <p class="header__para">I'm a <b class="orange" >Full-stack Engineer</b> with a strong passion for building web application with great user experiences.
-                <br>
-                Here's a bit <b class="orange click " onclick="togglemodal()">about me.</b></p>
+                <p class="header__para">I'm a <b class="orange">Full-stack Engineer</b> with a strong passion for
+                    building web application with great user experiences.
+                    <br>
+                    Here's a bit <b class="orange click " onclick="togglemodal()">about me.</b>
+                </p>
                 <div class="social__list">
-                    <a href="https://www.linkedin.com/in/gurram-dhanush-6183241b6" target="_blank" class="social__link click"> <i class="fab fa-linkedin-in" ></i></a>
-                    <a href="https://github.com/dhanush07-star" target="_blank" class="social__link click"> <i class="fa-brands fa-github"></i></a>
-                    <a href="./assets/Gurram_Dhanush-draft.pdf" target="_blank" class="social__link click"><i class="fa-sharp fa-solid fa-file-pdf"></i></i></a>
+                    <a href="https://www.linkedin.com/in/gurram-dhanush-6183241b6" target="_blank"
+                        class="social__link click"> <i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/dhanush07-star" target="_blank" class="social__link click"> <i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="./assets/Gurram_Dhanush.pdf" target="_blank" class="social__link click"><i
+                            class="fa-sharp fa-solid fa-file-pdf"></i></i></a>
                 </div>
             </div>
         </header>
         <a href="#">
-            <button class="mail__btn click" onclick="togglemodal()" >
+            <button class="mail__btn click" onclick="togglemodal()">
                 <i class="fa-sharp fa-regular fa-envelope"></i>
             </button>
         </a>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click "></div>
         </a>
-    
+
 
         <div class="modal">
-            <div class=" modal__half modal__about"> 
-                <h3 class="modal__title modal__title--about" >Here's a bit about me.</h3>
-                <h4 class="modal__sub--title modal__sub--title--about" >Full-stack Software Engineer.</h4>
-                <p class="modal__para" >I'm a 23 year-old <b class="orange" >Softaware Engineer </b> with a strong passion for developing websites with great <b class="orange" >user experiences.</b> <br>
-                I am <b class="orange">seeking opportunities</b> to use my programming skills and learn new technologies in the field of <b class="orange" >software development and web technologies.</b></p>
+            <div class=" modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+                <h4 class="modal__sub--title modal__sub--title--about">Full-stack Software Engineer.</h4>
+                <p class="modal__para">I'm a 23 year-old <b class="orange">Softaware Engineer </b> with a strong passion
+                    for developing websites with great <b class="orange">user experiences.</b> <br>
+                    I am <b class="orange">seeking opportunities</b> to use my programming skills and learn new
+                    technologies in the field of <b class="orange">software development and web technologies.</b></p>
                 <div class="modal__languages">
-                    <figure class="modal__language" >
-                        <img class="modal__language--img"  src="./assets/html.png">
-                        <span class="language__name">HTML</span> 
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/html.png">
+                        <span class="language__name">HTML</span>
                     </figure>
-                    <figure class="modal__language" >
+                    <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/css.png">
-                        <span class="language__name">CSS</span>                       
+                        <span class="language__name">CSS</span>
                     </figure>
-                    <figure class="modal__language" >
+                    <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/js.png">
-                        <span class="language__name">JavaScript</span> 
+                        <span class="language__name">JavaScript</span>
                     </figure>
-                    <figure class="modal__language" >
+                    <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/node-js.png">
-                        <span class="language__name">Node JS</span> 
+                        <span class="language__name">Node JS</span>
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/vite.svg">
                         <span class="language__name">Vite</span>
                     </figure>
-                    <figure class="modal__language" >
-                        <img class="modal__language--img"  src="./assets/sql.png">
-                        <span class="language__name">SQL</span> 
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/sql.png">
+                        <span class="language__name">SQL</span>
                     </figure>
-                    <figure class="modal__language" >
+                    <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/react.png">
-                        <span class="language__name">React</span>                       
+                        <span class="language__name">React</span>
                     </figure>
-                     <figure class="modal__language" >
+                    <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/springio-icon.svg">
-                        <span class="language__name">Spring-boot</span>                       
+                        <span class="language__name">Spring-boot</span>
                     </figure>
-                    <figure class="modal__language" >
+                    <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/restAPI.png">
-                        <span class="language__name">REST API</span> 
+                        <span class="language__name">REST API</span>
                     </figure>
-                    <figure class="modal__language" >
+                    <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/linux.png">
-                        <span class="language__name">Linux</span> 
+                        <span class="language__name">Linux</span>
                     </figure>
                 </div>
             </div>
             <div class=" modal__half modal__contact">
-                <i class="fa-solid fa-xmark modal__exit click " onclick="togglemodal()"   ></i>
-                <h3 class="modal__title modal__title--contact" >Let's have a chat!</h3>
-                <h3 class="modal__sub--title modal__sub--title--contact" >I'm Currently open for new opportunities</h3>
+                <i class="fa-solid fa-xmark modal__exit click " onclick="togglemodal()"></i>
+                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+                <h3 class="modal__sub--title modal__sub--title--contact">I'm Currently open for new opportunities</h3>
                 <form id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
-                        <label class="form__item--label" >Name</label>
-                        <input class="input" name="user_name" type="text" ></input>
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text"></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Email</label>
-                        <input class="input" name="user_email" type="email" ></input>
+                        <input class="input" name="user_email" type="email"></input>
                     </div>
                     <div class="form__item">
-                        <label class="form__item--label" >Message</label>
-                        <textarea class="input" name="message" type="text" ></textarea>
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text"></textarea>
                     </div>
-                    <button id="contact__sub" class="form__submit" onclick="togglemode()" >Send it my way</button>
+                    <button id="contact__sub" class="form__submit" onclick="togglemode()">Send it my way</button>
                 </form>
                 <div class="modal__overlay modal__overlay--loading ">
-                    <i class="fas fa-spinner" ></i>
+                    <i class="fas fa-spinner"></i>
                 </div>
                 <div class="modal__overlay modal__overlay--success">
                     Thanks for the message! looking forward to speaking with you soon.
                 </div>
-            </div> 
+            </div>
         </div>
 
 
@@ -146,23 +155,77 @@
         <img src="./assets/circle.svg" class="shape shape--5">
         <img src="./assets/squiggly.svg" class="shape shape--6">
         <img src="./assets/circle.svg" class="shape shape--7">
-        <img src="./assets/semi circle.svg" class="shape shape--8">     
+        <img src="./assets/semi circle.svg" class="shape shape--8">
 
 
 
     </section>
 
 
-    <section id="projects" >
+    <section id="projects">
         <div class="container">
             <div class="row">
-                <h1 class="section__title"  >Here are some of my <span class="orange" >projects</span></h1>
+                <h1 class="section__title">Here are some of my <span class="orange">projects</span></h1>
                 <ul class="projects__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/springboot.PNG" class="project__img" alt="">
+                            <div class="project__wrapper--bg">
+
+                            </div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Eazy School A School website
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Spring Boot, Spring Security, H2 database, JDBC Framework, Spring Data JPA, Spring MVC,AWS MySQL, and Spring REST services.
+                                </h4>
+                                <p class="project__description--para">
+                                
+                                    <p>
+                                        • A school website created using Spring, Spring Core, Spring Boot, and
+                                        Spring Security frameworks.Developed a robust backend project for a school application that allowed users to
+                                        send messages for information requests.
+                                    </p>
+                                    <p>
+                                        • Implemented user authentication and registration functionality, enabling students
+                                        to log in or register using their email addresses.
+                                        Designed admin features to add or delete students from classes and
+                                        view class details, providing a comprehensive overview of the students
+                                        in each class.
+                                    </p>
+                                    <p>
+                                        • Created a course page where administrators could add courses, specify
+                                        course amounts, and manage student enrollment in courses.
+                                        Utilized One-to-Many relationship for classes and students, and Manyto-Many
+                                        relationship for courses and students.
+                                    </p>
+                                    <p>
+                                        • Employed a wide range of technologies including Spring Boot, Spring
+                                        Security, H2 database, JDBC Framework, Spring Data JPA, Spring MVC,
+                                        AWS MySQL, and Spring REST services.
+                                        Integrated REST services and leveraged tools like HAL Explorer, SpringBoot
+                                        Actuator, and Spring Boot Admin for enhanced functionality and
+                                        monitoring
+                                    </p>
+                                </p>
+
+                                <div class="proeject__description--links">
+                                    <a href="#" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <!-- <a href="#" class="project__description--link">
+                                        <i class="fa-sharp fa-solid fa-link"></i>
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class="project">
                         <div class="project__wrapper">
                             <img src="./assets/libraryProject.png" class="project__img" alt="">
                             <div class="project__wrapper--bg">
-                                
+
                             </div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
@@ -172,15 +235,20 @@
                                     HTML, CSS, JavaScript, and React libraries
                                 </h4>
                                 <p class="project__description--para">
-                                    The Library Website is an online platform where users can browse, sort, and purchase books.The website includes a Books section where users can view all available books and sort them based on various parameters
-                                    such as author, genre, and publication year. The website also includes a Cart section where users can add and remove
+                                    The Library Website is an online platform where users can browse, sort, and purchase
+                                    books.The website includes a Books section where users can view all available books
+                                    and sort them based on various parameters
+                                    such as author, genre, and publication year. The website also includes a Cart
+                                    section where users can add and remove
                                     books from their cart before proceeding to checkout.
                                 </p>
                                 <div class="proeject__description--links">
-                                    <a href="https://github.com/dhanush07-star/Library-app-react" class="project__description--link" >
+                                    <a href="https://github.com/dhanush07-star/Library-app-react"
+                                        class="project__description--link">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="https://library1995-react-app.netlify.app/" class="project__description--link" >
+                                    <a href="https://library1995-react-app.netlify.app/"
+                                        class="project__description--link">
                                         <i class="fa-sharp fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -191,67 +259,44 @@
                         <div class="project__wrapper">
                             <img src="./assets/Game-Project.png" class="project__img" alt="">
                             <div class="project__wrapper--bg">
-                                
+
                             </div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
                                     Game-Website
                                 </h3>
                                 <h4 class="project__description--sub-title">
-                                    Vite,React,TypeScript & chakra 
+                                    Vite,React,TypeScript & chakra
                                 </h4>
                                 <br>
                                 <h4>API used: <a href="https://rawg.io/">rawg.io</a></h4>
                                 <p class="project__description--para">
-                                project is a game recommendation system built using Vite, ReactJS, TypeScript, and Chakra. The system allows users to
-                                search for games based on their preferred genre and platform, making it easier for them to find games that they can play
-                                on their chosen platform.
+                                    project is a game recommendation system built using Vite, ReactJS, TypeScript, and
+                                    Chakra. The system allows users to
+                                    search for games based on their preferred genre and platform, making it easier for
+                                    them to find games that they can play
+                                    on their chosen platform.
                                 </p>
                                 <p>
-                                    The use of ReactJS and Chakra allows for a responsive and visually appealing user interface, while the inclusion of
-                                    TypeScript adds static type checking to the codebase, making it easier to catch errors and bugs during development.
-                                    Additionally, the use of Vite allows for faster development and builds, making the development process more efficient.
+                                    The use of ReactJS and Chakra allows for a responsive and visually appealing user
+                                    interface, while the inclusion of
+                                    TypeScript adds static type checking to the codebase, making it easier to catch
+                                    errors and bugs during development.
+                                    Additionally, the use of Vite allows for faster development and builds, making the
+                                    development process more efficient.
                                 </p>
                                 <div class="proeject__description--links">
-                                    <a href="https://github.com/dhanush07-star/game-project" class="project__description--link" >
+                                    <a href="https://github.com/dhanush07-star/game-project"
+                                        class="project__description--link">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="https://game-project-indol.vercel.app/" class="project__description--link" >
+                                    <a href="https://game-project-indol.vercel.app/" class="project__description--link">
                                         <i class="fa-sharp fa-solid fa-link"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </li>
-<!--                     <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/webapp.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg">
-                                
-                            </div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Train Booking System
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    Expressjs, microservice & GCP
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum impedit exercitationem optio 
-                                    fuga praesentium alias nulla,cumque rem reiciendis labore in voluptatibus. 
-                                    Praesentium suscipit rerum nam repudiandae porro, dolore blanditiis!
-                                </p>
-                                <div class="proeject__description--links">
-                                    <a href="#" class="project__description--link" >
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="#" class="project__description--link" >
-                                        <i class="fa-sharp fa-solid fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li> -->
                 </ul>
             </div>
         </div>
@@ -260,26 +305,32 @@
     <footer>
         <div class="container footer__container ">
             <div class="row footer__row">
-                <figure class="footer__logo" >
+                <figure class="footer__logo">
                     <img src="./assets/2.png" class="footer__logo--img" alt="">
                 </figure>
                 <div class="footer__Social--list">
-                    <a href="https://github.com/dhanush07-star" target="_blank" class="footer__Social--link link__hover-effect link__hover-effect--white " >
+                    <a href="https://github.com/dhanush07-star" target="_blank"
+                        class="footer__Social--link link__hover-effect link__hover-effect--white ">
                         GitHub
                     </a>
-                    <a href="https://www.linkedin.com/in/gurram-dhanush-6183241b6" target="_blank" class="footer__Social--link link__hover-effect link__hover-effect--white " >
+                    <a href="https://www.linkedin.com/in/gurram-dhanush-6183241b6" target="_blank"
+                        class="footer__Social--link link__hover-effect link__hover-effect--white ">
                         Linkedin
                     </a>
-                    <a href="#" onclick="togglemodal()"  class="footer__Social--link link__hover-effect link__hover-effect--white " >
+                    <a href="#" onclick="togglemodal()"
+                        class="footer__Social--link link__hover-effect link__hover-effect--white ">
                         Contact
                     </a>
-                    <a href="./assets/GURRAM_DHANUSH.pdf" target="_blank"  class="footer__Social--link link__hover-effect link__hover-effect--white " >
+                    <a href="./assets/GURRAM_DHANUSH.pdf" target="_blank"
+                        class="footer__Social--link link__hover-effect link__hover-effect--white ">
                         Resume
                     </a>
                 </div>
-                <div class="footer__copyright"> Copyright  <i class="fa-regular fa-copyright"></i>  2023 Gurram Dhanush</div>
+                <div class="footer__copyright"> Copyright <i class="fa-regular fa-copyright"></i> 2023 Gurram Dhanush
+                </div>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
